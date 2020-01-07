@@ -1,38 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Contact</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-<!-- My Name -->
-<header>
-    <h1>Brandon Bayer</h1>
-    <h3><a href="contact.html">Contact</a></h3>
-    <h3><a href="portfolio.html">Portfolio</a></h3>
-    <h3><a href="index.html">About</a></h3>
-</header>
+<!doctype html>
+<html lang="en-us">
 
-<div.main>
-    <!-- Contact -->
-    <h2>Contact</h2>
-    <hr>
-    <form>
-        <h4>Name</h4>
-        <input type="text" name="name"><br>
-        <h4>Email</h4>
-        <input type="text" name="email"><br>
-        <h4>Message</h4>
-        <input type="text" name="message"><br><br>
-        <input type="submit" value="Submit">
-    </form>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact | Brandon Bayer</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Brandon Bayer</a>
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact</h1>
+
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit">
+            </form>
+
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            Copyright &copy;
+        </div>
+    </footer>
 </body>
-</div.main>
-<div.footer>
-    <p>Copyright©</p>
-</div.footer>
+
 </html>
